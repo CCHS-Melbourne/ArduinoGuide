@@ -1,0 +1,63 @@
+\chapter{All the Physics You Will Need}
+\label{chap:Physics}
+There are two measurable quantities that all electrical circuits share:
+\textbf{current} $I$ and \textbf{voltage} $V$.
+
+Current is a way to count the number of electrons flowing past a point in a wire during some period of time, 
+for what we will be doing here you can imagine them as tiny tennis balls flying inside the wire.
+
+Voltage is a measure of how much energy each ball has,
+thinking of tennis balls again 
+you can imagine it as how much it will hurt to be hit by a ball served during the Australian open
+verses one gently rolled across the table:
+the higher the voltage the more it will hurt.
+
+Notice that the two are independent: 
+how many electrons flow past a point is not related to their energy, nor the other way around.
+
+In all electrical circuits 
+we use electricity to deliver \textbf{power} $P$ to something.
+The power delivered is the current times the voltage: $P = VI$.
+Circuit design is about giving every element as much power as it needs,
+but not so much that it burns out.
+
+What ``too much'' power means depends on how much power an element converts to heat,
+and how efficient at dissipating heat it is.
+
+Knowing only that you and looking at the current voltage characteristics 
+you can see why a resistor is a lot more robust than an LED:
+a tiny change in the voltage around 
+$v_d$
+will cause a hugely disproportionate increase in the power delivered, 
+quite probably more than enough to burn it out.
+For the resistor,
+by contrast there,
+would have to be a huge increase in the voltage for it to burnout,
+since the power delivered to it increases much more evenly.
+
+To deal specifically with circuits you need a further two laws:
+Kirchhoff's current and voltage law.
+
+The current law is a way of saying that current can't be created out of nothing:
+As much current must leave any junction in a circuit as enters it.
+You will also need two laws for dealing with circuits:
+Kirchhoff's circuit laws.
+
+ 
+\def \rot {120}
+\begin{center}
+\resizebox{0.2\textwidth}{!}{%
+\begin{circuitikz} \draw
+({cos(\rot - 90)},{sin(\rot - 90)}) to[short, i=$i_a$] (0,0)(0,0) 
+to[short, i=$i_b$] ({cos(2*\rot - 90)},{sin(2*\rot - 90)}) 
+(0,0) to[short, i=$i_c$] ({cos(3*\rot - 90)},{sin(3*\rot - 90)})
+;
+\end{circuitikz}
+}
+\end{center}
+
+In the above we must have $i_a = i_c + i_b$
+
+\colorbox{yellow}{Redo the so it doesn't make your eyes bleed, add a dot in 
+the center, fix up the language.}
+ 

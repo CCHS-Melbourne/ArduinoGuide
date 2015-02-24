@@ -1,0 +1,41 @@
+\documentclass[11pt,a4paper,twocolumn]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphbox}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{pdftex,colorlinks=true,allcolors=blue}
+\usepackage{hypcap}
+\usepackage[parfill]{parskip}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage[rmargin=1.5cm, lmargin=1.5cm, bmargin=2cm, tmargin=2cm]{geometry}
+\usepackage{verbatim}
+\usepackage{xcolor}
+\usepackage{circuitikz}
+\usepackage{import}
+
+\lstdefinestyle{Arduino}{%
+    keywords={void},%                 define keywords
+    keywordstyle=\bfseries\color{orange},
+    identifierstyle=\color{orange},
+    morecomment=[l]{//},%             treat // as comments
+    morecomment=[s]{/*}{*/},%         define /* ... */ comments
+    emph={HIGH, OUTPUT, LOW},%        keywords to emphasize
+    emphstyle=\bfseries\color{blue},
+}
+\setlength{\columnsep}{1.2cm}
+\begin{document}
+\lstset{basicstyle = \ttfamily,columns=fullflexible}
+\pagestyle{plain}
+\input{title}
+\tableofcontents
+\subimport*{Chapter1/}{Chapter1.tex}
+\subimport*{Appendix/}{Appendix.tex}
+
+\end{document}

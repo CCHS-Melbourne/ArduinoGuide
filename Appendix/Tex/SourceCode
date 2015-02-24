@@ -1,0 +1,17 @@
+\chapter{Source Code}
+\subsection*{Blink/Digital Output}
+\verbatiminput{../Chapter1/Src/blink.src}
+
+\subsection*{Digital Input}
+\subsubsection*{External}
+\verbatiminput{../Chapter1/Src/serial.src}
+
+
+\subsubsection*{Internal}
+\verbatiminput{../Chapter1/Src/serial2.src} 
+
+\subsection*{Analog Output}
+\verbatiminput{../Chapter1/Src/rgb.src}
+
+\subsection*{Analog Input}
+\verbatiminput{../Chapter1/Src/piezo.src}  

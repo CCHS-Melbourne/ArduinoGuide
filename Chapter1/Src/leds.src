@@ -1,0 +1,16 @@
+int forward_pin = 13;
+int backward_pin = 12;
+
+void setup() {
+    pinMode(forward_pin, OUTPUT);
+    pinMode(backward_pin, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(forward_pin, HIGH);
+    digitalWrite(backward_pin, HIGH); 
+    delay(500);           
+    digitalWrite(forward_pin, LOW);
+    digitalWrite(backward_pin, LOW);
+    delay(500);         
+}

@@ -1,0 +1,17 @@
+int in 12; 
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(in, INPUT);     
+}
+
+void loop(){
+  if (digitalRead(in)== HIGH) {     
+    Serial.write("I'm on\n");
+    delay(1000);
+  } 
+  else {
+    Serial.write("I'm off\n"); 
+    delay(1000);
+  }
+}
